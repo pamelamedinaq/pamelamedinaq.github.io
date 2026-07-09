@@ -105,11 +105,31 @@ a:hover { color: var(--accent-hover); }
 .sidebar-name a:hover { color: var(--accent); }
 
 .sidebar-affiliation {
-  margin-top: 0.45rem;
-  font-size: 0.85rem;
+  margin-top: 0.55rem;
+  font-family: var(--sans);
+  font-size: 0.64rem;
+  font-weight: 500;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
   color: var(--muted);
-  line-height: 1.5;
+  line-height: 1.6;
 }
+
+/* Minimal icon row (mirrors the landing) */
+.side-icons {
+  margin-top: 1.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.85rem;
+}
+.side-icons a {
+  color: var(--muted);
+  display: inline-flex;
+  transition: color 0.15s ease, transform 0.15s ease;
+}
+.side-icons a:hover { color: var(--accent); transform: translateY(-1px); }
+.side-icons svg { width: 17px; height: 17px; display: block; }
 
 /* Vertical nav in the sidebar */
 .side-nav {
@@ -628,6 +648,8 @@ html.dark h2 { border-bottom-color: #3a332c; }
 html.dark .sidebar-name, html.dark .sidebar-name a { color: #f2ede5; }
 html.dark .sidebar-affiliation, html.dark .sidebar-contact { color: #a59d90; }
 html.dark .sidebar-contact a { color: #e08bab; }
+html.dark .side-icons a { color: #a59d90; }
+html.dark .side-icons a:hover { color: #e08bab; }
 html.dark .sidebar-photo img { border-color: #3a332c; box-shadow: 2px 3px 10px rgba(0,0,0,0.4); }
 html.dark .sidebar-photo-placeholder { background: #241f1b; border-color: #3a332c; color: #7d766b; }
 html.dark .quick-links a { color: #e08bab; border-color: #e08bab; }
