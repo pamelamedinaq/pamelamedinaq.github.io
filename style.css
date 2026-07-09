@@ -243,32 +243,56 @@ p { margin-bottom: 1rem; }
 }
 .about strong { color: var(--ink); }
 
-/* ---- Landing hero (à la Kevin) ---- */
-.hero {
-  min-height: calc(100vh - 16rem);
+/* ---- Landing hero (à la Kevin: full-page, no sidebar) ---- */
+.hero-page {
+  min-height: 92vh;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  padding: 3rem 1.5rem 2rem;
+}
+
+.hero-main {
+  width: 100%;
+  max-width: 620px;
+  padding-top: 6vh;
+}
+
+.hero-name {
+  font-family: var(--serif);
+  font-size: clamp(2.3rem, 4vw, 3.2rem);
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  line-height: 1.08;
+  color: var(--ink);
+  margin-bottom: 0.7rem;
+}
+
+.hero-role {
+  font-family: var(--sans);
+  font-size: 0.86rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 2.6rem;
 }
 
 .hero-tagline {
   font-family: var(--serif);
-  font-size: clamp(1.9rem, 3.2vw, 2.7rem);
-  font-weight: 600;
-  letter-spacing: -0.012em;
-  line-height: 1.18;
-  color: var(--ink);
-  margin-bottom: 1.4rem;
-  max-width: 21ch;
+  font-size: clamp(1.15rem, 1.6vw, 1.4rem);
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.5;
+  color: var(--body);
+  max-width: 44ch;
+  margin-bottom: 2.8rem;
 }
 
-.hero-intro {
-  font-family: var(--serif);
-  font-size: 1.08rem;
-  line-height: 1.7;
-  color: var(--body);
-  max-width: 52ch;
-  margin-bottom: 2.6rem;
+.hero-toggle {
+  position: fixed;
+  top: 1.6rem;
+  right: 2rem;
 }
 
 .hero-nav {
@@ -310,8 +334,15 @@ p { margin-bottom: 1rem; }
   color: var(--accent);
 }
 
-html.dark .hero-tagline { color: #f2ede5; }
-html.dark .hero-intro { color: #d9d2c7; }
+/* Full-width footer on the landing page */
+body.home footer {
+  margin-left: 0;
+  max-width: none;
+}
+
+html.dark .hero-name { color: #f2ede5; }
+html.dark .hero-role { color: #a59d90; }
+html.dark .hero-tagline { color: #d9d2c7; }
 html.dark .hero-nav a { color: #e5ded3; }
 html.dark .hero-nav a:hover { color: #e08bab; }
 html.dark .hero-nav a::after { background: #e08bab; }
