@@ -243,6 +243,80 @@ p { margin-bottom: 1rem; }
 }
 .about strong { color: var(--ink); }
 
+/* ---- Landing hero (à la Kevin) ---- */
+.hero {
+  min-height: calc(100vh - 16rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-tagline {
+  font-family: var(--serif);
+  font-size: clamp(1.9rem, 3.2vw, 2.7rem);
+  font-weight: 600;
+  letter-spacing: -0.012em;
+  line-height: 1.18;
+  color: var(--ink);
+  margin-bottom: 1.4rem;
+  max-width: 21ch;
+}
+
+.hero-intro {
+  font-family: var(--serif);
+  font-size: 1.08rem;
+  line-height: 1.7;
+  color: var(--body);
+  max-width: 52ch;
+  margin-bottom: 2.6rem;
+}
+
+.hero-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.05rem;
+  margin-bottom: 3rem;
+}
+.hero-nav a {
+  position: relative;
+  display: inline-block;
+  font-family: var(--sans);
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--ink);
+  transition: color 0.25s ease;
+}
+.hero-nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: var(--accent);
+  transition: width 0.3s ease;
+}
+.hero-nav a:hover { color: var(--accent); }
+.hero-nav a:hover::after { width: 100%; }
+
+.hero-keywords {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+html.dark .hero-tagline { color: #f2ede5; }
+html.dark .hero-intro { color: #d9d2c7; }
+html.dark .hero-nav a { color: #e5ded3; }
+html.dark .hero-nav a:hover { color: #e08bab; }
+html.dark .hero-nav a::after { background: #e08bab; }
+html.dark .hero-keywords { color: #e08bab; }
+
 /* ---- News (badges à la Gianmarco) ---- */
 .news-list { list-style: none; }
 .news-item {
