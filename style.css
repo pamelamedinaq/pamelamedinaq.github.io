@@ -148,6 +148,39 @@ a:hover { color: var(--accent-hover); }
 }
 .quick-links a:hover { background: var(--accent); color: var(--paper); }
 
+/* ---- Dark mode toggle (à la Monica) ---- */
+.dark-toggle {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+.switch { position: relative; display: inline-block; width: 32px; height: 18px; }
+.switch input { opacity: 0; width: 0; height: 0; }
+.slider {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  background: #d6cfc4;
+  border-radius: 999px;
+  transition: 0.2s;
+}
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 2px;
+  top: 2px;
+  background: var(--paper);
+  border-radius: 50%;
+  transition: 0.2s;
+}
+.switch input:checked + .slider { background: #4a4038; }
+.switch input:checked + .slider::before { transform: translateX(14px); background: #e8e2d8; }
+
 /* ---- Content ---- */
 .content { min-width: 0; }
 
@@ -390,6 +423,50 @@ footer {
   font-size: 0.72rem;
   color: var(--faint);
 }
+
+/* ---- Dark mode palette (warm) ---- */
+html.dark body { background: #181411; color: #d9d2c7; }
+html.dark { background: #181411; }
+html.dark .top-nav a { color: #a59d90; }
+html.dark .top-nav a:hover { color: #f2ede5; }
+html.dark .top-nav a.active { color: #f2ede5; border-bottom-color: #e08bab; }
+html.dark a { color: #e08bab; }
+html.dark a:hover { color: #eba9c2; }
+html.dark h1, html.dark h2 { color: #f2ede5; }
+html.dark h2 { border-bottom-color: #3a332c; }
+html.dark .sidebar-name, html.dark .sidebar-name a { color: #f2ede5; }
+html.dark .sidebar-affiliation, html.dark .sidebar-contact { color: #a59d90; }
+html.dark .sidebar-contact a { color: #e08bab; }
+html.dark .sidebar-photo img { border-color: #3a332c; box-shadow: 2px 3px 10px rgba(0,0,0,0.4); }
+html.dark .sidebar-photo-placeholder { background: #241f1b; border-color: #3a332c; color: #7d766b; }
+html.dark .quick-links a { color: #e08bab; border-color: #e08bab; }
+html.dark .quick-links a:hover { background: #e08bab; color: #181411; }
+html.dark .about p { color: #d9d2c7; }
+html.dark .about strong { color: #f2ede5; }
+html.dark .news-item { border-bottom-color: #2e2822; }
+html.dark .news-date { color: #7d766b; }
+html.dark .research-group { border-color: rgba(255,255,255,0.06); }
+html.dark .research-group.pubs     { background: #272019; }
+html.dark .research-group.working  { background: #25221a; }
+html.dark .research-group.nonref   { background: #2b221a; }
+html.dark .research-group.progress { background: #2e211c; }
+html.dark .group-label { color: #b3a99a; }
+html.dark .paper-entry { border-top-color: rgba(255,255,255,0.08); }
+html.dark .paper-title { color: #f2ede5; }
+html.dark .paper-header:hover .paper-title { color: #e08bab; }
+html.dark .paper-chevron { color: #e08bab; }
+html.dark .paper-meta { color: #a59d90; }
+html.dark .paper-meta .journal { color: #c4bbac; }
+html.dark .paper-actions a { color: #e08bab; }
+html.dark .paper-body p { border-top-color: rgba(255,255,255,0.08); color: #c4bbac; }
+html.dark .paper-note { color: #a59d90; }
+html.dark .course-title { color: #f2ede5; }
+html.dark .course-meta { color: #a59d90; }
+html.dark .media-list li { border-bottom-color: #2e2822; }
+html.dark .media-outlet { color: #f2ede5; }
+html.dark .media-year { color: #7d766b; }
+html.dark .dark-toggle { color: #a59d90; }
+html.dark footer { border-top-color: #2e2822; color: #7d766b; }
 
 /* ---- Responsive ---- */
 @media (max-width: 860px) {
