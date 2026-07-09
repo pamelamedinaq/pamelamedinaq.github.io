@@ -351,6 +351,18 @@ p { margin-bottom: 1rem; }
 .hero-nav a:hover { color: var(--accent); }
 .hero-nav a:hover::after { width: 100%; }
 
+.hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  margin-bottom: 2.6rem;
+  font-family: var(--sans);
+  font-size: 0.94rem;
+  font-weight: 500;
+}
+.hero-links a { color: var(--body); }
+.hero-links a:hover { color: var(--accent); }
+
 .hero-keywords {
   font-family: var(--mono);
   font-size: 0.78rem;
@@ -386,6 +398,8 @@ html.dark .hero-photo-placeholder { background: #241f1b; border-color: #3a332c; 
 html.dark .hero-nav a { color: #e5ded3; }
 html.dark .hero-nav a:hover { color: #e08bab; }
 html.dark .hero-nav a::after { background: #e08bab; }
+html.dark .hero-links a { color: #d9d2c7; }
+html.dark .hero-links a:hover { color: #e08bab; }
 html.dark .hero-keywords { color: #e08bab; }
 
 /* ---- News (badges à la Gianmarco) ---- */
