@@ -4,7 +4,7 @@
    sticky sidebar layout, burgundy accent, chip links.
    ===================================================== */
 
-@import url("https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;0,7..72,600;1,7..72,400&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Caveat:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;0,7..72,600;1,7..72,400&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap");
 
 :root {
   --paper: #fbf9f4;
@@ -316,14 +316,6 @@ p { margin-bottom: 1rem; }
   padding-top: 6vh;
 }
 
-.hero-hola {
-  font-family: "Caveat", cursive;
-  font-size: 1.7rem;
-  font-weight: 600;
-  color: var(--accent);
-  margin-bottom: 0.2rem;
-}
-
 .hero-name {
   font-family: var(--serif);
   font-size: clamp(2.3rem, 4vw, 3.2rem);
@@ -433,14 +425,7 @@ body.home footer {
   max-width: none;
 }
 
-html.dark .hero-hola { color: #e08bab; }
-html.dark .hero-name { color: #f2ede5; }
-html.dark .hero-role { color: #a59d90; }
-html.dark .hero-tagline { color: #d9d2c7; }
-html.dark .hero-photo img { border-color: #3a332c; box-shadow: 4px 6px 22px rgba(0,0,0,0.45); }
-html.dark .hero-photo-placeholder { background: #241f1b; border-color: #3a332c; color: #7d766b; }
-
-@media (max-width: 900px) {
+html.dark @media (max-width: 900px) {
   .hero-page {
     flex-direction: column;
     gap: 2rem;
