@@ -42,8 +42,14 @@ a:hover { color: var(--accent-hover); }
 /* ---- Layout: fixed sidebar (à la Kevin) + scrolling content ---- */
 .layout {
   margin-left: 300px;
-  max-width: 850px;
   padding: 3rem 3.5rem 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.layout > .content {
+  width: 100%;
+  max-width: 880px;
 }
 
 /* ---- Sidebar: fixed full-height column, centered ---- */
@@ -437,12 +443,12 @@ p { margin-bottom: 1rem; }
 /* ---- Footer ---- */
 footer {
   margin-left: 300px;
-  max-width: 850px;
   padding: 1.4rem 3.5rem 2.2rem;
   border-top: 1px solid var(--rule);
   font-family: var(--mono);
   font-size: 0.72rem;
   color: var(--faint);
+  text-align: center;
 }
 
 /* ---- Dark mode palette (warm) ---- */
