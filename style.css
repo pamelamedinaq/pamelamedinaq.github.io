@@ -211,7 +211,7 @@ p { margin-bottom: 1rem; }
 }
 .news-badge.paper { background: #1a5c3a; }
 .news-badge.award { background: #7b5200; }
-.news-badge.appt  { background: #1a3a5c; }
+.news-badge.appt  { background: #6d2544; }
 .news-badge.media { background: #5a2d82; }
 
 .news-date {
@@ -232,8 +232,8 @@ p { margin-bottom: 1rem; }
   border: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: 10px;
 }
-.research-group.pubs     { background: #f0f3f6; }
-.research-group.nonref   { background: #f1edf5; }
+.research-group.pubs     { background: #f8edf2; }
+.research-group.nonref   { background: #f3e7ec; }
 .research-group.working  { background: #eef4ee; }
 .research-group.progress { background: #f7f0e7; }
 
