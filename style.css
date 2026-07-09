@@ -232,10 +232,10 @@ p { margin-bottom: 1rem; }
   border: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: 10px;
 }
-.research-group.pubs     { background: #f8edf2; }
-.research-group.nonref   { background: #f3e7ec; }
-.research-group.working  { background: #eef4ee; }
-.research-group.progress { background: #f7f0e7; }
+.research-group.pubs     { background: #f5eae2; }
+.research-group.nonref   { background: #f2e4d8; }
+.research-group.working  { background: #f5efdf; }
+.research-group.progress { background: #eeddd2; }
 
 .group-label {
   margin: 0 0 0.4rem;
