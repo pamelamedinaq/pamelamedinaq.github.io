@@ -487,8 +487,10 @@ html.dark .hero-photo img { border-color: #3a332c; box-shadow: 4px 6px 22px rgba
   }
   .hero-photo { padding-top: 0; }
   .hero-photo img, .hero-photo-placeholder { width: 190px; }
-  .hero-main { padding-top: 0; max-width: 620px; }
+  .hero-main { padding-top: 0; max-width: 620px; text-align: center; }
   .hero-role { white-space: normal; }
+  .hero-nav { align-items: center; }
+  .hero-links { justify-content: center; }
 }
 html.dark .hero-nav a { color: #e5ded3; }
 html.dark .hero-nav a:hover { color: #e08bab; }
