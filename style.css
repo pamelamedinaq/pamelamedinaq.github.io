@@ -275,6 +275,17 @@ p { margin-bottom: 1rem; }
 }
 .about strong { color: var(--ink); }
 
+.about-roles {
+  font-family: var(--serif);
+  font-size: 1.02rem;
+  line-height: 1.75;
+  color: var(--body);
+  margin: 0 0 1rem;
+  padding-left: 1.25rem;
+}
+.about-roles li { margin-bottom: 0.35rem; }
+.about-roles li::marker { color: var(--accent); }
+
 /* ---- Landing hero (à la Kevin: full-page, no sidebar) ---- */
 .hero-page {
   min-height: 92vh;
@@ -678,6 +689,7 @@ html.dark .quick-links a { color: #e08bab; border-color: #e08bab; }
 html.dark .quick-links a:hover { background: #e08bab; color: #181411; }
 html.dark .about p { color: #d9d2c7; }
 html.dark .about strong { color: #f2ede5; }
+html.dark .about-roles { color: #d9d2c7; }
 html.dark .news-item { border-bottom-color: #2e2822; }
 html.dark .news-date { color: #7d766b; }
 html.dark .research-group { border-color: rgba(255,255,255,0.06); }
