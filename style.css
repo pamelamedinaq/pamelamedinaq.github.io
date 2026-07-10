@@ -566,7 +566,7 @@ html.dark .hero-keywords { color: #e08bab; }
   font-size: 1.15rem;
   font-weight: 600;
   letter-spacing: -0.006em;
-  color: #6d2544;
+  color: #54382b;
   line-height: 1.3;
 }
 .paper-title a { color: inherit; }
@@ -741,7 +741,7 @@ html.dark .research-group.nonref   { background: #2b221a; }
 html.dark .research-group.progress { background: #2e211c; }
 html.dark .group-label { color: #b3a99a; }
 html.dark .paper-entry { border-top-color: rgba(255,255,255,0.08); }
-html.dark .paper-title { color: #e3b7c6; }
+html.dark .paper-title { color: #e2d3c4; }
 html.dark .paper-chevron { color: #e08bab; }
 html.dark .paper-meta { color: #a59d90; }
 html.dark .paper-meta .journal { color: #c4bbac; }
