@@ -359,7 +359,6 @@ p { margin-bottom: 1rem; }
   font-style: italic;
   line-height: 1.5;
   color: var(--body);
-  max-width: 44ch;
   margin-bottom: 2.8rem;
 }
 
