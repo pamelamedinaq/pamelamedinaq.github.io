@@ -547,12 +547,13 @@ html.dark .hero-keywords { color: #e08bab; }
 .research-group.progress { background: #f8f1e7; }
 
 .group-label {
-  margin: 0 0 0.4rem;
-  color: var(--ink-soft, #5a5856);
-  font-family: var(--serif);
-  font-size: 1.35rem;
-  font-style: italic;
+  margin: 0.2rem 0 0.6rem;
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 0.74rem;
   font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 
 .paper-entry {
