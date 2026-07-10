@@ -340,12 +340,14 @@ p { margin-bottom: 1rem; }
 
 .hero-role {
   font-family: var(--sans);
-  font-size: 0.86rem;
+  font-size: 0.76rem;
   font-weight: 500;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
   color: var(--muted);
+  line-height: 1.7;
   margin-bottom: 2.6rem;
+  white-space: nowrap;
 }
 
 .hero-tagline {
@@ -435,6 +437,7 @@ html.dark @media (max-width: 900px) {
   .hero-photo { padding-top: 0; }
   .hero-photo img, .hero-photo-placeholder { width: 190px; }
   .hero-main { padding-top: 0; max-width: 620px; }
+  .hero-role { white-space: normal; }
 }
 html.dark .hero-nav a { color: #e5ded3; }
 html.dark .hero-nav a:hover { color: #e08bab; }
