@@ -248,7 +248,7 @@ h1 {
   font-size: 1.8rem;
   font-weight: 600;
   letter-spacing: -0.012em;
-  color: var(--ink);
+  color: var(--accent);
   margin-bottom: 1.6rem;
   line-height: 1.15;
 }
@@ -711,7 +711,8 @@ html.dark .side-nav a.active { color: #e08bab; }
 html.dark .side-nav a::after { background: #e08bab; }
 html.dark a { color: #e08bab; }
 html.dark a:hover { color: #eba9c2; }
-html.dark h1, html.dark h2 { color: #f2ede5; }
+html.dark h1 { color: #e08bab; }
+html.dark h2 { color: #f2ede5; }
 html.dark h2 { border-bottom-color: #3a332c; }
 html.dark .sidebar-name, html.dark .sidebar-name a { color: #f2ede5; }
 html.dark .sidebar-affiliation, html.dark .sidebar-contact { color: #a59d90; }
