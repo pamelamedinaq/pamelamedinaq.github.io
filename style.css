@@ -465,6 +465,7 @@ p { margin-bottom: 1rem; }
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--accent);
+  text-align: center;
 }
 
 /* Full-width footer on the landing page */
