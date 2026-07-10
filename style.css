@@ -272,6 +272,7 @@ p { margin-bottom: 1rem; }
   font-size: 1.02rem;
   line-height: 1.75;
   color: var(--body);
+  text-align: justify;
 }
 .about strong { color: var(--ink); }
 
