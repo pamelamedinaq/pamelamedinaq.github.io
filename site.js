@@ -9,10 +9,9 @@ if (darkInput) {
 }
 
 // Expandable abstracts (+ / −)
-document.querySelectorAll('.paper-header').forEach(function (header) {
-  header.addEventListener('click', function (event) {
-    if (event.target.closest('a')) return;
-    var entry = header.closest('.paper-entry');
+document.querySelectorAll('.paper-chevron').forEach(function (chevron) {
+  chevron.addEventListener('click', function () {
+    var entry = chevron.closest('.paper-entry');
     var body = entry.querySelector('.paper-body');
     var open = entry.classList.toggle('open');
     body.style.maxHeight = open ? body.scrollHeight + 'px' : '0';
