@@ -286,6 +286,29 @@ p { margin-bottom: 1rem; }
 .about-roles li { margin-bottom: 0.35rem; }
 .about-roles li::marker { color: var(--accent); }
 
+/* Contact card */
+.contact-card {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  margin-top: 0.9rem;
+  padding: 1rem 1.4rem;
+  background: #f9f2ea;
+  border-left: 3px solid var(--accent);
+  border-radius: 0 10px 10px 0;
+  font-size: 0.88rem;
+}
+.contact-row {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+.contact-row svg { width: 15px; height: 15px; flex-shrink: 0; color: var(--accent); }
+.contact-row a { color: var(--body); }
+.contact-row a:hover { color: var(--accent); }
+
 /* ---- Landing hero (à la Kevin: full-page, no sidebar) ---- */
 .hero-page {
   min-height: 92vh;
@@ -690,6 +713,11 @@ html.dark .quick-links a:hover { background: #e08bab; color: #181411; }
 html.dark .about p { color: #d9d2c7; }
 html.dark .about strong { color: #f2ede5; }
 html.dark .about-roles { color: #d9d2c7; }
+html.dark .contact-card { background: #272019; border-left-color: #e08bab; }
+html.dark .contact-row { color: #a59d90; }
+html.dark .contact-row svg { color: #e08bab; }
+html.dark .contact-row a { color: #d9d2c7; }
+html.dark .contact-row a:hover { color: #e08bab; }
 html.dark .news-item { border-bottom-color: #2e2822; }
 html.dark .news-date { color: #7d766b; }
 html.dark .research-group { border-color: rgba(255,255,255,0.06); }
