@@ -623,6 +623,11 @@ html.dark .hero-keywords { color: #e08bab; }
   color: var(--muted);
   line-height: 1.5;
 }
+.paper-meta a {
+  color: inherit;
+  border-bottom: 1px dotted var(--faint);
+}
+.paper-meta a:hover { color: var(--accent); border-bottom-color: var(--accent); }
 .paper-meta .journal { color: #55514b; }
 
 .paper-actions {
@@ -745,6 +750,8 @@ html.dark .paper-entry { border-top-color: rgba(255,255,255,0.08); }
 html.dark .paper-title { color: #e2d3c4; }
 html.dark .paper-chevron { color: #e08bab; }
 html.dark .paper-meta { color: #a59d90; }
+html.dark .paper-meta a { color: inherit; border-bottom-color: #4a423a; }
+html.dark .paper-meta a:hover { color: #e08bab; border-bottom-color: #e08bab; }
 html.dark .paper-meta .journal { color: #c4bbac; }
 html.dark .paper-actions a { color: #e08bab; }
 html.dark .paper-body p { border-top-color: rgba(255,255,255,0.08); color: #c4bbac; }
