@@ -492,10 +492,10 @@ html.dark .hero-keywords { color: #e08bab; }
   border: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: 10px;
 }
-.research-group.pubs     { background: #f6ece2; }
-.research-group.working  { background: #f3eedd; }
-.research-group.nonref   { background: #ecdac7; }
-.research-group.progress { background: #e7ccbb; }
+.research-group.pubs     { background: #f9f2ea; }
+.research-group.working  { background: #f8f4e8; }
+.research-group.nonref   { background: #f7ede1; }
+.research-group.progress { background: #f5e8dc; }
 
 .group-label {
   margin: 0 0 0.4rem;
