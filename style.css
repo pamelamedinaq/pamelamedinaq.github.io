@@ -541,10 +541,7 @@ html.dark .hero-keywords { color: #e08bab; }
   border: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: 10px;
 }
-.research-group.pubs     { background: #faf6f0; }
-.research-group.working  { background: #faf7ee; }
-.research-group.nonref   { background: #f9f4ea; }
-.research-group.progress { background: #f8f1e7; }
+
 
 .group-label {
   margin: 0.2rem 0 0.6rem;
@@ -741,10 +738,7 @@ html.dark .contact-row a:hover { color: #e08bab; }
 html.dark .news-item { border-bottom-color: #2e2822; }
 html.dark .news-date { color: #7d766b; }
 html.dark .research-group { border-color: rgba(255,255,255,0.06); }
-html.dark .research-group.pubs     { background: #272019; }
-html.dark .research-group.working  { background: #25221a; }
-html.dark .research-group.nonref   { background: #2b221a; }
-html.dark .research-group.progress { background: #2e211c; }
+html.dark .research-group { border-color: rgba(255,255,255,0.12); }
 html.dark .group-label { color: #b3a99a; }
 html.dark .paper-entry { border-top-color: rgba(255,255,255,0.08); }
 html.dark .paper-title { color: #e2d3c4; }
