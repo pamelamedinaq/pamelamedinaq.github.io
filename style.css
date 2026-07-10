@@ -276,6 +276,16 @@ p { margin-bottom: 1rem; }
 }
 .about strong { color: var(--ink); }
 
+.roles-label {
+  font-family: var(--sans);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--faint);
+  margin: 1.6rem 0 0.5rem;
+}
+
 .about-roles {
   font-family: var(--serif);
   font-size: 1.02rem;
@@ -713,6 +723,7 @@ html.dark .quick-links a { color: #e08bab; border-color: #e08bab; }
 html.dark .quick-links a:hover { background: #e08bab; color: #181411; }
 html.dark .about p { color: #d9d2c7; }
 html.dark .about strong { color: #f2ede5; }
+html.dark .roles-label { color: #7d766b; }
 html.dark .about-roles { color: #d9d2c7; }
 html.dark .contact-card { background: #272019; border-left-color: #e08bab; }
 html.dark .contact-row { color: #a59d90; }
