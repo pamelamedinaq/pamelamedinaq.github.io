@@ -665,6 +665,46 @@ html.dark .hero-keywords { color: #e08bab; }
 }
 
 /* ---- Teaching ---- */
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+  margin-bottom: 0.4rem;
+}
+.course-card {
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  padding: 1.1rem 1.3rem 1rem;
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+.course-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(28, 26, 23, 0.06);
+}
+.course-code {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+  border: 1px solid currentColor;
+  border-radius: 3px;
+  padding: 1px 7px;
+  margin-bottom: 0.6rem;
+}
+.course-card .course-title { font-size: 1rem; }
+.course-card .course-meta { margin-top: 0.3rem; }
+
+.teaching-note {
+  margin-top: 2.4rem;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--muted);
+}
+
 .course { margin-bottom: 1.5rem; }
 .course-title {
   font-family: var(--serif);
@@ -751,6 +791,10 @@ html.dark .paper-actions a { color: #e08bab; }
 html.dark .paper-body p { border-top-color: rgba(255,255,255,0.08); color: #c4bbac; }
 html.dark .paper-note { color: #a59d90; }
 html.dark .course-title { color: #f2ede5; }
+html.dark .course-card { border-color: #3a332c; }
+html.dark .course-card:hover { border-color: #e08bab; box-shadow: 0 6px 18px rgba(0,0,0,0.35); }
+html.dark .course-code { color: #e08bab; }
+html.dark .teaching-note { color: #a59d90; }
 html.dark .course-meta { color: #a59d90; }
 html.dark .media-list li { border-bottom-color: #2e2822; }
 html.dark .media-outlet { color: #f2ede5; }
