@@ -715,6 +715,19 @@ html.dark .hero-keywords { color: #e08bab; }
 .course-meta { font-size: 0.86rem; color: var(--muted); margin-top: 1px; }
 
 /* ---- Media ---- */
+h2.caps-heading {
+  font-family: var(--sans);
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 0.5rem;
+  margin: 2.6rem 0 0.6rem;
+}
+html.dark h2.caps-heading { color: #a59d90; border-bottom-color: #3a332c; }
+
 .media-list { list-style: none; }
 .media-item {
   display: flex;
