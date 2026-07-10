@@ -474,7 +474,11 @@ body.home footer {
   max-width: none;
 }
 
-html.dark @media (max-width: 900px) {
+html.dark .hero-name { color: #f2ede5; }
+html.dark .hero-role { color: #a59d90; }
+html.dark .hero-photo img { border-color: #3a332c; box-shadow: 4px 6px 22px rgba(0,0,0,0.45); }
+
+@media (max-width: 900px) {
   .hero-page {
     flex-direction: column;
     gap: 2rem;
@@ -836,6 +840,7 @@ html.dark footer { border-top-color: #2e2822; color: #7d766b; }
   .layout {
     margin-left: 0;
     padding: 1.6rem 1.4rem 3rem;
+    flex-direction: column;
   }
   .sidebar {
     position: static;
